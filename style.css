@@ -1,0 +1,267 @@
+:root {
+	--logotipo: #1a1a1a;
+	--profesion: #f2f2f2;
+    --primario: #556B2F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+
+/* Background image */
+/* .bgimage {
+    height: 100vh;
+    background-color: #000;
+    background-image: url(./img/fondo.jpg);
+    background-size:cover;
+    position:relative;
+} */
+
+/* NAVBAR */
+
+.navbar-brand {
+    font-family: Verdana;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar-nav a {
+    font-family:Verdana;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    margin: 5px;
+}
+
+.navbar-brand:hover {
+    color: darkgreen;
+}
+.navbar-nav a:hover {
+    color: darkgreen;
+}
+
+/* texto hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* sobre mi section */
+.imageAboutPage {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.texto {
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+/* herramientas section */
+
+
+.logoHerramientas img {
+    width: 150px;
+    height: 150px;
+}
+
+.hover:hover {
+    width: 170px;
+    height: 170px;
+}
+
+/* portafolio section */
+
+.card {
+    width: 500px;
+    border-radius: 3%;
+}
+
+.card:hover {
+    width: 550px;
+}
+
+.portafolio h4 {
+    text-align: center;
+    font-family:Georgia;
+    color: darkolivegreen;
+}
+
+.portafolio p {
+    text-align: center;
+    font-family: georgia;
+    color: darkolivegreen;
+}
+
+/* iconos redes */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-instagram:hover,.fa-linkedin:hover, .fa-github:hover {
+    color: darkgreen;
+    font-size: 46px;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+.redes {
+    background-color: darkolivegreen;
+    text-align: center;
+}
+
+/* avatar */ 
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.containerAvatar {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.avatar {
+	width: 250px;
+	height: 250px;
+    margin-bottom: 50px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+@media all and (max-width: 700px ) {
+    .avatar {display: none;}
+}
+
+/* termina avatar */
+
+/* texto animado */
+#home {
+    width: 90%;
+	margin: auto;
+	max-width: 800px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;}
+
+.logotipo {
+	padding: 10px;
+	border: 5px solid var(--logotipo);
+	color: var(--logotipo);
+}
+
+.logotipo .subtitulo {
+    text-align: center;
+    color: var(--profesion);
+    background: var(--logotipo);
+    padding: 12px 20px;
+    transition: .5s ease all;
+    font-size: 36px;
+    font-family: Verdana;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logotipo:hover .subtitulo:hover {
+    background: var(--primario);
+}
+
+.texto-animado {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.texto-animado > div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: .3s ease all;
+}
+
+.texto-animado > div.animacion {
+    transform: translateY(-100px);
+}
+
+.texto-animado > div span {
+    font-size: 80px;
+    font-weight: normal;
+    line-height: 100px;
+}
+
+.texto-animado .segunda-linea {
+    position: absolute;
+    top: 100px;
+}
+
+
+@media screen and (max-width: 600px){
+	.texto-animado > div span {
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	.texto-animado .segunda-linea {
+		top: 50px;
+	}
+
+	.texto-animado > div.animacion {
+		transform: translateY(-50px);
+	}
+
+	.logotipo .subtitulo {
+		font-size: 20px;
+	}}
