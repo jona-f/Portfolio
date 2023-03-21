@@ -100,6 +100,7 @@ a {
 .card {
     width: 500px;
     border-radius: 3%;
+    max-width: 100%;
 }
 
 .card:hover {
@@ -116,6 +117,14 @@ a {
     text-align: center;
     font-family: georgia;
     color: darkolivegreen;
+}
+@media (max-width: 992px) {
+    .card{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+    }
 }
 
 /* iconos redes */
@@ -248,7 +257,7 @@ a {
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 	.texto-animado > div span {
 		font-size: 50px;
 		line-height: 50px;
@@ -265,3 +274,21 @@ a {
 	.logotipo .subtitulo {
 		font-size: 20px;
 	}}
+
+    @media screen and (max-width: 490px) {
+        .texto-animado > div span {
+            font-size: 40px;
+            line-height: 50px;
+        }
+    
+        .texto-animado .segunda-linea {
+            top: 50px;
+        }
+    
+        .texto-animado > div.animacion {
+            transform: translateY(-50px);
+        }
+    
+        .logotipo .subtitulo {
+            font-size: 20px;
+        }}
