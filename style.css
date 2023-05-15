@@ -20,15 +20,6 @@ a {
     outline: none;
 }
 
-/* Background image */
-/* .bgimage {
-    height: 100vh;
-    background-color: #000;
-    background-image: url(./img/fondo.jpg);
-    background-size:cover;
-    position:relative;
-} */
-
 /* NAVBAR */
 
 .navbar-brand {
@@ -84,6 +75,12 @@ a {
 
 /* herramientas section */
 
+.logoHerramientas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .logoHerramientas img {
     width: 150px;
