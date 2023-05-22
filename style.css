@@ -22,29 +22,21 @@ a {
 
 /* NAVBAR */
 
-.navbar-brand {
+.titulo-cv{
     font-family: Verdana;
-    color: #000;
-    text-decoration: none;
+    font-size: 26px;
 }
 
-.navbar-nav a {
-    font-family:Verdana;
-    font-size: 16px;
-    color: #000;
-    text-decoration: none;
+.nav-item{
+    font-family: Verdana;
+    font-size: 20px;
 }
 
-.navbar-nav {
-    margin: 5px;
+/* iconos */
+.nav-icon {
+    font-size: 50px;
 }
 
-.navbar-brand:hover {
-    color: darkgreen;
-}
-.navbar-nav a:hover {
-    color: darkgreen;
-}
 
 /* texto hero image*/
 .hero_title {
@@ -68,6 +60,14 @@ a {
     border-radius: 5%;
 }
 
+.mi-cv {
+    font-size: 40px;
+}
+
+.button:is(:hover, :focus){
+    outline-offset: 3px;
+}
+
 .texto {
     font-family: Verdana;
     font-size: 20px;
@@ -77,19 +77,12 @@ a {
 
 .logoHerramientas {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.logoHerramientas img {
-    width: 150px;
-    height: 150px;
-}
-
-.hover:hover {
-    width: 170px;
-    height: 170px;
+.herramientas {
+    font-size: 150px;
 }
 
 /* portafolio section */
@@ -129,9 +122,9 @@ a {
     font-size: 50px;
     cursor: pointer;
 }
-.fa-instagram:hover,.fa-linkedin:hover, .fa-github:hover {
+.hover-icon:hover {
     color: darkgreen;
-    font-size: 46px;
+    font-size: 56px;
 }
 .fab {
     color: #000000;
