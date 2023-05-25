@@ -40,8 +40,10 @@
                         </li>
                     </ul>
                     <span class="navbar-text">
-                        <a href="https://github.com/jona-f" target="_blank"><i class="fa-brands fa-square-github nav-icon" style="color: #ffffff;"></i></a>
-                        <a href="https://www.linkedin.com/in/jona-fajardo/" target="_blank"><i class="fa-brands fa-linkedin nav-icon" style="color: #ffffff;"></i></a>
+                        <a href="https://github.com/jona-f" target="_blank"><i
+                                class="fa-brands fa-square-github nav-icon" style="color: #ffffff;"></i></a>
+                        <a href="https://www.linkedin.com/in/jona-fajardo/" target="_blank"><i
+                                class="fa-brands fa-linkedin nav-icon" style="color: #ffffff;"></i></a>
                     </span>
                 </div>
             </div>
@@ -52,19 +54,22 @@
     <main>
         <!-- TITULO -->
 
-        <section class="bgimage" id="home">
+        <section id="home">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="containerAvatar">
-                        <div class="avatar">
-                            <img src="./img/perfil.jpg" alt="Avatar" />
-                        </div>
+
+                <div class="containerAvatar">
+                    <div class="avatar">
+                        <img src="./img/perfil.jpg" alt="Avatar" />
                     </div>
-                    <a href="#" class="logotipo">
-                        <div class="texto-animado" id="texto">Jonathan Fajardo</div>
-                        <p class="subtitulo">Desarrollador Web</p>
-                    </a>
                 </div>
+
+                <!-- TEXTO QUE SE BORRA -->
+                <div class='console-container'>
+                    <span id='text'></span>
+                    <div class='console-underscore' id='console'>&#95;
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -78,14 +83,18 @@
 
                 <div class="row mt-4">
                     <div class="col-lg-4">
+
                         <img src="./img/perfil.jpg" class="imageAboutPage" alt="imagen perfil">
+
                     </div>
 
                     <div class="col-lg-8">
-                        <p>Desarrollador web junior recibido de Coderhouse dentro del top 10 de la comisíon de
-                            Desarrollo web y JavaScript.Me encuentro estudiando Base de datos (Sqlite) para luego
-                            convertirme en Desarrollador Full Stack con Phyton. Me destaco por ser: Responsable,puntual
-                            y creativo.</p>
+                        <!-- INFO SOBRE MI -->
+                        <p>Soy Desarrollador web junior recibido de Coderhouse dentro del top 10 de la comisíon de
+                            Desarrollo web y JavaScript.Me encuentro buscando mi primer trabajo IT y estoy estudiando
+                            Base de datos (Sqlite) para proximamente
+                            seguir con el curso de Phyton.
+                            Me destaco por ser: Responsable,puntual y creativo.</p>
                         <div class="row mt-3">
                             <div class="col-md-6">
                                 <ul>
@@ -94,6 +103,7 @@
                                     <li>Ocupación: Front-end Developer</li>
 
                                 </ul>
+                                <!-- REDES SOCIALES Y CV -->
                                 <div class="social-icons">
                                     <a href="https://github.com/jona-f" target="_blank"><i
                                             class="fab fa-github hover-icon"></i></a>
@@ -102,7 +112,9 @@
                                     <a class="btn btn-outline-success me-2 mi-cv" href="cv.pdf" target="_blank"
                                         type="button">Mi Cv</a>
                                 </div>
+
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -118,15 +130,15 @@
 
                 <div class="logoHerramientas">
 
-                            <i class="herramientas fa-brands fa-html5" style="color: #e95607;"></i>
-                            <i class="herramientas fa-brands fa-css3-alt" style="color: #1259d3;"></i>
-                            <i class="herramientas fa-brands fa-square-js" style="color: #d8ca2c;"></i>
-                            <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
-                            <i class="herramientas fa-solid fa-database" style="color: #5d6269;"></i>
-                            <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
-                            <i class="herramientas fa-brands fa-github" style="color: #141414;"></i>
-                            <i class="herramientas fa-brands fa-sass" style="color: #d963a8;"></i>
-                            <i class="herramientas fa-brands fa-bootstrap" style="color: #97178c;"></i>
+                    <i class="herramientas fa-brands fa-html5" style="color: #e95607;"></i>
+                    <i class="herramientas fa-brands fa-css3-alt" style="color: #1259d3;"></i>
+                    <i class="herramientas fa-brands fa-square-js" style="color: #d8ca2c;"></i>
+                    <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
+                    <i class="herramientas fa-solid fa-database" style="color: #5d6269;"></i>
+                    <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
+                    <i class="herramientas fa-brands fa-github" style="color: #141414;"></i>
+                    <i class="herramientas fa-brands fa-sass" style="color: #d963a8;"></i>
+                    <i class="herramientas fa-brands fa-bootstrap" style="color: #97178c;"></i>
 
 
                 </div>
@@ -142,7 +154,7 @@
 
                 <div class="row portafolio">
                     <div class="col-lg-6 mt-6">
-                        <div class="card">
+                        <div class="card certificados">
                             <img class="card-img-top" src="./img/certificado1.png" alt="Card image">
                             <div class="card-body">
                                 <h4 class="card-title">Certificado Desarrollo Web</h4>
@@ -155,7 +167,7 @@
                     </div>
 
                     <div class="col-lg-6 mt-6">
-                        <div class="card">
+                        <div class="card certificados">
                             <img class="card-img-top" src="./img/certificado2.png" alt="Card image">
                             <div class="card-body">
                                 <h4 class="card-title">Certificado JavaScript</h4>
@@ -169,8 +181,8 @@
 
 
                     <div class="col-lg-6 mt-6">
-                        <div class="card">
-                            <img class="card-img-top" src="./img/blogcl.jpg" alt="Card image">
+                        <div class="card portfolioContent">
+                            <!--<img class="card-img-top" src="./img/blogcl.jpg" alt="Card image">-->
                             <div class="card-body">
                                 <h4 class="card-title">Cl Logistica</h4>
                                 <p class="card-text">Entrega proyecto final curso Desarrollo web</p>
@@ -184,7 +196,7 @@
 
                     <div class="col-lg-6 mt-6">
                         <div class="card portfolioContent">
-                            <img class="card-img-top" src="./img/tienda.jpg" alt="Card image">
+                            <!--<img class="card-img-top" src="./img/tienda.jpg" alt="Card image">-->
                             <div class="card-body">
                                 <h4 class="card-title">Sacabollos Quilmes</h4>
                                 <p class="card-text">Entrega proyecto final curso JavaScript</p>
@@ -199,7 +211,7 @@
 
                     <div class="col-lg-6 mt-6">
                         <div class="card portfolioContent">
-                            <img class="card-img-top" src="./img/maniatic.jpg" alt="Card image">
+                            <!--<img class="card-img-top" src="./img/maniatic.jpg" alt="Card image">-->
                             <div class="card-body">
                                 <h4 class="card-title">Maniatic Shine</h4>
                                 <p class="card-text">Proyecto en curso con Html,Css,JavaScript</p>
@@ -213,7 +225,7 @@
 
                     <div class="col-lg-6 mt-6">
                         <div class="card portfolioContent">
-                            <img class="card-img-top" src="./img/jfweb.jpg" alt="Card image">
+                            <!--<img class="card-img-top" src="./img/jfweb.jpg" alt="Card image">-->
                             <div class="card-body">
                                 <h4 class="card-title">Jf Web Developer</h4>
                                 <p class="card-text">Proyecto en curso en colaboracion con G.D</p>
@@ -277,9 +289,13 @@
         <div class="container-fluid">
             <!-- redes icons -->
             <div class="social-icons mt-4 redes">
-                <a href="https://www.instagram.com/jf.webdesing/" target="_blank"><i class="fab fa-instagram hover-icon"></i></a>
+                <p class="copy">Mis Redes:</p>
+                <a href="https://www.instagram.com/jf.webdesing/" target="_blank"><i
+                        class="fab fa-instagram hover-icon"></i></a>
                 <a href="https://github.com/jona-f" target="_blank"><i class="fab fa-github hover-icon"></i></a>
-                <a href="https://www.linkedin.com/in/jona-fajardo/" target="_blank"><i class="fab fa-linkedin hover-icon"></i></a>
+                <a href="https://www.linkedin.com/in/jona-fajardo/" target="_blank"><i
+                        class="fab fa-linkedin hover-icon"></i></a>
+                <p class="copy">Copy-Right 2023: Jonathan Fajardo</p>
             </div>
         </div>
 

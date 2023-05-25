@@ -1,44 +1,53 @@
-/* texto animado titulo */
+/* texto que se borra */
 
-const texto = document.getElementById('texto');
-const letras = texto.innerText.split("");
+// function([string1, string2],target id,[color1,color2])    
+consoleText(['Hola Mundo.', 'Soy Jonathan Fajardo', 'Front-end Developer.'], 'text', ['darkolivegreen', 'olivedrab', 'darkolivegreen']);
 
-texto.innerText = '';
+function consoleText(words, id, colors) {
+    if (colors === undefined) colors = ['#fff'];
+    var visible = true;
+    var con = document.getElementById('console');
+    var letterCount = 1;
+    var x = 1;
+    var waiting = false;
+    var target = document.getElementById(id)
+    target.setAttribute('style', 'color:' + colors[0])
+    window.setInterval(function () {
 
-letras.forEach((letra) => {
-    let caracter = letra === ' ' ? '&nbsp;' : letra;
-
-
-    texto.innerHTML = texto.innerHTML + `
-    <div>
-        <span>${caracter}</span>
-        <span class="segunda-linea">${caracter}</span>
-    </div>
-    `
-});
-
-texto.addEventListener('mouseenter', () => {
-    let cuenta = 0;
-
-    const intervalo = setInterval(() => {
-        if(cuenta < texto.children.length){
-            texto.children[cuenta].classList.add('animacion');
-            cuenta += 1;
-        } else {
-            clearInterval(intervalo);
+        if (letterCount === 0 && waiting === false) {
+            waiting = true;
+            target.innerHTML = words[0].substring(0, letterCount)
+            window.setTimeout(function () {
+                var usedColor = colors.shift();
+                colors.push(usedColor);
+                var usedWord = words.shift();
+                words.push(usedWord);
+                x = 1;
+                target.setAttribute('style', 'color:' + colors[0])
+                letterCount += x;
+                waiting = false;
+            }, 1000)
+        } else if (letterCount === words[0].length + 1 && waiting === false) {
+            waiting = true;
+            window.setTimeout(function () {
+                x = -1;
+                letterCount += x;
+                waiting = false;
+            }, 1000)
+        } else if (waiting === false) {
+            target.innerHTML = words[0].substring(0, letterCount)
+            letterCount += x;
         }
-    }, 30);
-});
+    }, 120)
+    window.setInterval(function () {
+        if (visible === true) {
+            con.className = 'console-underscore hidden'
+            visible = false;
 
-texto.addEventListener('mouseleave', () => {
-    let cuenta = 0;
-
-    const intervalo = setInterval(() => {
-        if(cuenta < texto.children.length){
-            texto.children[cuenta].classList.remove('animacion');
-            cuenta += 1;
         } else {
-            clearInterval(intervalo);
+            con.className = 'console-underscore'
+
+            visible = true;
         }
-    }, 30);
-});
+    }, 400)
+}
