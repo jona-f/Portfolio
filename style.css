@@ -127,7 +127,7 @@ textarea {
 
 .form-control {
     text-align: center;
-    width: 400px;
+    width: 380px;
 }
 
 /* btn style */
@@ -290,11 +290,10 @@ textarea {
     left: 10px;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 420px) {
     .console-container {
-        width: 100%;
+        max-width: 300px;
         height: 250px;
-        text-align: center;
     }
 }
 
