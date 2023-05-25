@@ -36,7 +36,8 @@ a {
 .nav-icon {
     font-size: 50px;
 }
-    /* fin navbar */
+
+/* fin navbar */
 
 
 /* sobre mi section */
@@ -44,14 +45,6 @@ a {
 .imageAboutPage {
     width: 100%;
     border-radius: 5%;
-}
-
-.mi-cv {
-    font-size: 40px;
-}
-
-.button:is(:hover, :focus) {
-    outline-offset: 3px;
 }
 
 .texto {
@@ -110,7 +103,7 @@ a {
 .card:hover {
     border: 1px solid black;
     transform: scale(1.05);
-    }
+}
 
 .card:active {
     transform: scale(0.95) rotateZ(1.7deg);
@@ -123,22 +116,94 @@ a {
     cursor: pointer;
 }
 
-.hover-icon:hover {
-    color: darkgreen;
-    font-size: 56px;
-}
-
 .fab {
     color: #000000;
 }
 
+/* formulario contacto */
+textarea {
+    resize: none;
+}
+
+.form-control {
+    text-align: center;
+    width: 400px;
+}
+
+/* btn style */
+
+.btn {
+    --color: #556B2F;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+}
+
+.btn::after,
+.btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+
+.btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+    color: var(--color2);
+}
+
+.btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+
+/* fin btn styles */
+
 /* footer styling */
-.redes {
+.footer-s {
     background-color: darkolivegreen;
+}
+
+.social-icons2 {
+    font-size: 50px;
+    cursor: pointer;
     text-align: center;
 }
 
 .copy {
+    text-align: center;
     font-size: 25px;
 }
 
@@ -199,9 +264,6 @@ a {
 /* termina avatar */
 
 /* texto que se borra */
-
-@import url(https://fonts.googleapis.com/css?family=Khula:700);
-
 .hidden {
     opacity: 0;
 }
@@ -211,7 +273,7 @@ a {
     font-family: Verdana;
     font-size: 50px;
     text-align: center;
-    height: 200px;
+    height: 100px;
     width: 600px;
     display: flex;
     justify-content: center;
@@ -230,8 +292,8 @@ a {
 
 @media screen and (max-width: 599px) {
     .console-container {
-        width: 420px;
-        height: 200px;
+        width: 100%;
+        height: 250px;
         text-align: center;
     }
 }
