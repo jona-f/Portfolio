@@ -54,23 +54,17 @@ a {
 
 /* termina sobre mi section */
 
-/* herramientas section */
+/*  herramientas section */
 
 .logoHerramientas {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-
-@media screen and (max-width:1200px) {
-    .logoHerramientas {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de tamaño igual */
+    gap: 20px; /* Espacio entre las celdas */
 }
 
 .herramientas {
-    font-size: 130px;
+    font-size: 6rem; /* Tamaño de los íconos */
+    justify-self: center; /* Centrar horizontalmente dentro de su celda */
 }
 
 /* termina herramientas section */
@@ -112,6 +106,7 @@ a {
 /* iconos redes */
 
 .social-icons {
+    display: ruby-text;
     font-size: 50px;
     cursor: pointer;
 }
@@ -149,44 +144,6 @@ textarea {
     font-family: 'Roboto', 'Segoe UI', sans-serif;
     text-transform: uppercase;
     color: var(--color);
-}
-
-.btn::after,
-.btn::before {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    transform: skew(90deg) translate(-50%, -50%);
-    position: absolute;
-    inset: 50%;
-    left: 25%;
-    z-index: -1;
-    transition: .5s ease-out;
-    background-color: var(--color);
-}
-
-.btn::before {
-    top: -50%;
-    left: -25%;
-    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
-}
-
-.btn:hover::before {
-    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
-}
-
-.btn:hover::after {
-    transform: skew(45deg) translate(-50%, -50%);
-}
-
-.btn:hover {
-    color: var(--color2);
-}
-
-.btn:active {
-    filter: brightness(.7);
-    transform: scale(.98);
 }
 
 /* fin btn styles */
