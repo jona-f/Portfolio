@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Probando AOS -->
+    <!-- Probando AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/JF.png" />
+    <link rel="shortcut icon" href="./img/jf.jpg" />
     <title>Portfolio Jonathan Fajardo</title>
 
 </head>
@@ -37,13 +37,19 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">'Portfolio'</a>
                         </li>
-                        <li class="nav-item">
+                        <!--<li class="nav-item">
                             <a class="nav-link" href="#contacto">'Contacto'}</a>
-                        </li>
+                        </li> -->
                     </ul>
                     <span class="navbar-text">
-                        <a href="https://www.linkedin.com/in/jona-fajardo/" target="_blank"><i class="fa-brands fa-linkedin nav-icon" style="color: #ffffff;"></i></a>
-                        <a href="https://github.com/jona-f" target="_blank"><i class="fa-brands fa-square-github nav-icon" style="color: #ffffff;"></i></a>
+                        <div id="modo-btn" class="toggle-switch">
+                            <input class="toggle-input" id="toggle" type="checkbox">
+                            <label class="toggle-label" for="toggle"></label>
+                        </div>
+                        <a href="https://www.linkedin.com/in/jona-fajardo/" target="_blank"><i
+                                class="fa-brands fa-linkedin nav-icon" style="color: #ffffff;"></i></a>
+                        <a href="https://github.com/jona-f" target="_blank"><i
+                                class="fa-brands fa-square-github nav-icon" style="color: #ffffff;"></i></a>
                     </span>
                 </div>
             </div>
@@ -51,7 +57,7 @@
 
     </header>
 
-    <main>
+    <main id="dark-mode">
         <!-- TITULO -->
 
         <section id="home">
@@ -59,7 +65,7 @@
 
                 <div class="containerAvatar">
                     <div class="avatar">
-                        <img src="./img/perfil.jpg" alt="Avatar" />
+                        <img src="./img/jf.jpg" alt="Avatar" />
                     </div>
                 </div>
 
@@ -83,34 +89,25 @@
 
                 <div class="row mt-4">
                     <div class="col-lg-4" data-aos="zoom-in-up">
-
-                        <img src="./img/perfil.jpg" class="imageAboutPage" alt="imagen perfil">
-
+                        <img src="./img/perfil.jpg" class="imageAboutPage img-fluid" alt="imagen perfil">
                     </div>
 
                     <div class="col-lg-8">
                         <!-- INFO SOBRE MI -->
-                        <p> ¡Hola! Mi nombre es Jonathan Fajardo y soy un apasionado desarrollador Front End con experiencia en la creación de interfaces web atractivas y funcionales. 
-                            Con un enfoque en la usabilidad y la experiencia del usuario, me especializo en transformar diseños en código interactivo utilizando tecnologías como HTML5, CSS3 y JavaScript.
-                            ¿Qué puedo hacer por ti?
-                        <ul>
-                            <li>Desarrollo Responsiv: Creo sitios web que se adaptan perfectamente a diferentes dispositivos y tamaños de pantalla.</li>
-                            <li>Optimización de Rendimiento: Mejoro la velocidad y eficiencia de los sitios para una carga rápida y una experiencia fluida.</li>
-                            <li>Accesibilidad: Diseño interfaces que cumplen con estándares de accesibilidad para llegar a una audiencia más amplia.</li>
-                            <li>Integración de APIs: para agregar funcionalidades dinámicas a las paginas web.</li>
-                        </ul>
+                        <p> ¡Hola! Soy Jonathan Fajardo, un apasionado desarrollador Front End. Soy licenciado de los cursos de Desarrollo Web y JavaScript de Coderhouse, donde tuve el honor de estar entre los diez mejores de mi comisión. Tengo 28 años y estoy entusiasmado por iniciar mi carrera en tecnología, estoy buscando activamente mi primer trabajo en el sector de IT.
+                            Durante mi formación, he desarrollado habilidades en la creación de interfaces web atractivas y funcionales, centradas en la experiencia del usuario. Estoy emocionado por aplicar mis conocimientos y contribuir al éxito de proyectos innovadores.
                         </p>
-                            <div class="row mt-3">
-                            <div class="col-md-6">
+                        <div class="row mt-3">
+                            <div class="mt-md-0">
                                 <!-- REDES SOCIALES Y CV -->
                                 <div class="social-icons">
-                                    <a href="https://www.linkedin.com/in/jona-fajardo/" target="_blank"><i class="fab fa-linkedin hover-icon"></i></a>
-                                    <a href="https://github.com/jona-f" target="_blank"><i class="fab fa-github hover-icon"></i></a>
+                                    <a href="https://www.linkedin.com/in/jona-fajardo/" target="_blank"><i
+                                            class="fab fa-linkedin hover-icon"></i></a>
+                                    <a href="https://github.com/jona-f" target="_blank"><i
+                                            class="fab fa-github hover-icon"></i></a>
                                     <a class="btn" href="cv.pdf" target="_blank" type="button">Mi Cv</a>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -119,25 +116,33 @@
 
         <!-- herramientas section-->
         <section id="services">
-            <div class="container">
-                <h1 class="text-center">Herramientas</h1>
+            <div class="container1">
+                <h1 class="text-center">Skills</h1>
 
                 <hr>
 
-                <div class="logoHerramientas" data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom">
-
-                    <i class="herramientas fa-brands fa-html5" style="color: #e95607;"></i>
-                    <i class="herramientas fa-brands fa-css3-alt" style="color: #1259d3;"></i>
-                    <i class="herramientas fa-brands fa-square-js" style="color: #d8ca2c;"></i>
-                    <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
-                    <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
-                    <i class="herramientas fa-brands fa-github" style="color: #141414;"></i>
-                    <i class="herramientas fa-brands fa-sass" style="color: #d963a8;"></i>
-                    <i class="herramientas fa-brands fa-bootstrap" style="color: #97178c;"></i>
-
-
+                <div class="grid-container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <h2>Lenguajes</h2>
+                    <div class="logolenguajes">
+                        <i class="herramientas fa-brands fa-square-js" style="color: #d8ca2c;"></i>
+                        <i class="herramientas fa-brands fa-html5" style="color: #e95607;"></i>
+                        <i class="herramientas fa-brands fa-css3-alt" style="color: #1259d3;"></i>
+                    </div>
+            
+                    <h2>Tecnologias</h2>
+                    <div class="logoTecnologias">
+                        <i class="herramientas fa-brands fa-github" style="color: #141414;"></i>
+                        <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
+                    </div>
+            
+                    <h2>Frameworks</h2>
+                    <div class="logoFrameworks">
+                        <i class="herramientas fa-brands fa-bootstrap" style="color: #97178c;"></i>
+                        <i class="herramientas fa-brands fa-sass" style="color: #d963a8;"></i>
+                        <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
+                    </div>
                 </div>
+            </div>
 
         </section>
 
@@ -155,7 +160,8 @@
                             <div class="card-body">
                                 <h4 class="card-title">Certificado Desarrollo Web</h4>
                                 <div class="text-center">
-                                    <a href="https://www.coderhouse.com/pages/certificados/630cc0505e3f2b002489b19f" target="_blank" class="btn">Link</a>
+                                    <a href="https://www.coderhouse.com/pages/certificados/630cc0505e3f2b002489b19f"
+                                        target="_blank" class="btn">Link</a>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +173,8 @@
                             <div class="card-body">
                                 <h4 class="card-title">Certificado JavaScript</h4>
                                 <div class="text-center">
-                                    <a href="https://www.coderhouse.com/pages/certificados/63c46fb294757f000e75b2d1" target="_blank" class="btn">Link</a>
+                                    <a href="https://www.coderhouse.com/pages/certificados/63c46fb294757f000e75b2d1"
+                                        target="_blank" class="btn">Link</a>
                                 </div>
                             </div>
                         </div>
@@ -176,10 +183,14 @@
 
                     <div class="col-lg-6 mt-6">
                         <div class="card portfolioContent" data-aos="zoom-in-right">
-                            <!--<img class="card-img-top" src="./img/blogcl.jpg" alt="Card image">-->
+                            
                             <div class="card-body">
                                 <h4 class="card-title">Cl Logistica</h4>
-                                <p class="card-text">Entrega proyecto final curso Desarrollo web</p>
+                                <p class="card-text">Proyecto final curso Desarrollo web</p>
+                                <h6>tecnologias usadas:</h6>
+                                <i class="fa-brands fa-html5" style="color: #e95607;"></i>
+                                <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
+                                <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
                                 <div class="text-center">
                                     <a href="https://cllogistica.netlify.app/" target="_blank" class="btn">Link</a>
                                 </div>
@@ -188,13 +199,19 @@
                     </div>
 
                     <div class="col-lg-6 mt-6">
-                        <div class="card portfolioContent"  data-aos="zoom-in-left">
-                            <!--<img class="card-img-top" src="./img/tienda.jpg" alt="Card image">-->
+                        <div class="card portfolioContent" data-aos="zoom-in-left">
+                            
                             <div class="card-body">
                                 <h4 class="card-title">Sacabollos Quilmes</h4>
-                                <p class="card-text">Entrega proyecto final curso JavaScript</p>
+                                <p class="card-text">Proyecto final curso JavaScript</p>
+                                <h6>tecnologias usadas:</h6>
+                                <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
+                                <i class="fa-brands fa-html5" style="color: #e95607;"></i>
+                                <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
+                                <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
                                 <div class="text-center">
-                                    <a href="https://jona-f.github.io/sacabollos.quilmes/" target="_blank" class="btn">Link</a>
+                                    <a href="https://jona-f.github.io/sacabollos.quilmes/" target="_blank"
+                                        class="btn">Link</a>
                                 </div>
                             </div>
                         </div>
@@ -203,10 +220,14 @@
 
                     <div class="col-lg-6 mt-6">
                         <div class="card portfolioContent" data-aos="zoom-in-right">
-                            <!--<img class="card-img-top" src="./img/maniatic.jpg" alt="Card image">-->
+                            
                             <div class="card-body">
                                 <h4 class="card-title">Maniatic Shine</h4>
-                                <p class="card-text">Proyecto en curso con Html,Css,JavaScript</p>
+                                <h6>tecnologias usadas:</h6>
+                                <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
+                                <i class="fa-brands fa-html5" style="color: #e95607;"></i>
+                                <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
+                                <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
                                 <div class="text-center">
                                     <a href="https://jona-f.github.io/Maniatic-S/" target="_blank" class="btn">Link</a>
                                 </div>
@@ -215,11 +236,15 @@
                     </div>
 
                     <div class="col-lg-6 mt-6">
-                        <div class="card portfolioContent"  data-aos="zoom-in-left">
-                            <!--<img class="card-img-top" src="./img/jfweb.jpg" alt="Card image">-->
+                        <div class="card portfolioContent" data-aos="zoom-in-left">
+                            
                             <div class="card-body">
                                 <h4 class="card-title">Portal web</h4>
-                                <p class="card-text">Emprendimiento en curso</p>
+                                <h6>tecnologias usadas:</h6>
+                                <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
+                                <i class="fa-brands fa-html5" style="color: #e95607;"></i>
+                                <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
+                                <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
                                 <div class="text-center">
                                     <a href="https://jona-f.github.io/portal.webs/" target="_blank" class="btn">Link</a>
                                 </div>
@@ -228,10 +253,10 @@
                     </div>
                 </div>
 
-                </div>
+            </div>
         </section>
 
-        <!-- contacto section-->
+        <!-- contacto section 
         <section id="contacto">
             <div class="container mt-3 contactContent">
                 <h1 class="text-center">Contacto</h1>
@@ -241,7 +266,8 @@
                 <div class="row mt-4">
                     <div class="col-lg-6">
                         <div style="max-width:100%;overflow:hidden;color:red;width:400px;height:400px;">
-                            <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;" data-aos="fade-up-right">
+                            <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;"
+                                data-aos="fade-up-right">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26234.161494838652!2d-58.266080798374766!3d-34.72358334866956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e38e45f5777%3A0x6a86dac21334524f!2sQuilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1679410422709!5m2!1ses!2sar"
                                     width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
@@ -252,7 +278,7 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <!-- formulario -->
+                        
                         <form action="https://formsubmit.co/jonafajardo32@gmail.com" method="post">
 
                             <input type="text" class="form-control form-control-lg" placeholder="Nombre" required>
@@ -260,7 +286,8 @@
                             <input type="text" class="form-control mt-3" placeholder="Asunto" required>
 
                             <div class="mb-3 mt-3">
-                                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Contame tus dudas y dejame tus datos de contacto"></textarea>
+                                <textarea class="form-control" rows="5" id="comment" name="text"
+                                    placeholder="Contame tus dudas y dejame tus datos de contacto"></textarea>
                             </div>
 
                             <button type="submit" class="btn">Enviar</button>
@@ -269,7 +296,7 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
 
     </main>
 
@@ -280,13 +307,15 @@
 
             <div class="social-icons2 mt-4 footer-s">
 
-                    <p class="copy">Mis Redes:</p>
+                <p class="copy">Mis Redes:</p>
 
-                        <a href="https://www.linkedin.com/in/jona-fajardo/" target="_blank"><i class="fab fa-linkedin hover-icon"></i></a>
-                        <a href="https://github.com/jona-f" target="_blank"><i class="fab fa-github hover-icon"></i></a>
-                        <a href="https://www.instagram.com/fajardo.jona/" target="_blank"><i class="fab fa-instagram hover-icon"></i></a>
+                <a href="https://www.linkedin.com/in/jona-fajardo/" target="_blank"><i
+                        class="fab fa-linkedin hover-icon"></i></a>
+                <a href="https://github.com/jona-f" target="_blank"><i class="fab fa-github hover-icon"></i></a>
+                <a href="https://www.instagram.com/fajardo.jona/" target="_blank"><i
+                        class="fab fa-instagram hover-icon"></i></a>
 
-                    <p class="copy">Copy-Right 2023: Jonathan Fajardo</p>
+                <p class="copy">Copy-Right 2023: Jonathan Fajardo</p>
 
             </div>
         </div>
@@ -300,9 +329,10 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 </html>

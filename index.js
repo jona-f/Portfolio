@@ -51,3 +51,28 @@ function consoleText(words, id, colors) {
         }
     }, 400)
 }
+
+/* dark mode */
+
+const toggleSwitch = document.querySelector('#toggle');
+const modoBtn = document.querySelector('#modo-btn');
+
+// Event listener para cambiar entre modo light y modo dark
+toggleSwitch.addEventListener('change', () => {
+    if (toggleSwitch.checked) {
+        document.body.classList.add('dark-mode');
+        modoBtn.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+        modoBtn.classList.remove('dark-mode');
+    }
+});
+
+// Chequear el estado inicial del modo (por si el usuario tiene preferencias guardadas)
+if (localStorage.getItem('modo') === 'dark') {
+    toggleSwitch.checked = true;
+    document.body.classList.add('dark-mode');
+    modoBtn.classList.add('dark-mode');
+} else {
+    toggleSwitch.checked = false;
+}

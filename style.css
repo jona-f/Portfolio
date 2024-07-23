@@ -20,6 +20,7 @@ a {
     outline: none;
 }
 
+
 /* NAVBAR */
 
 .titulo-cv {
@@ -37,13 +38,89 @@ a {
     font-size: 50px;
 }
 
+/* boton de modo oscuro */
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin: 10px;
+}
+
+.toggle-switch .toggle-input {
+    display: none;
+}
+
+.toggle-switch .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 24px;
+    background-color: #ffffff;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-switch .toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.toggle-switch .toggle-input:checked+.toggle-label {
+    background-color: #4CAF50;
+}
+
+.toggle-switch .toggle-input:checked+.toggle-label::before {
+    transform: translateX(16px);
+}
+
+/* Light tema */
+.toggle-switch.light .toggle-label {
+    background-color: #BEBEBE;
+}
+
+.toggle-switch.light .toggle-input:checked+.toggle-label {
+    background-color: #9B9B9B;
+}
+
+.toggle-switch.light .toggle-input:checked+.toggle-label::before {
+    transform: translateX(6px);
+}
+
+/* Dark tema */
+.toggle-switch.dark .toggle-label {
+    background-color: #4B4B4B;
+}
+
+.toggle-switch.dark .toggle-input:checked+.toggle-label {
+    background-color: #717171;
+}
+
+.toggle-switch.dark .toggle-input:checked+.toggle-label::before {
+    transform: translateX(16px);
+}
+
+
+/* fin boton */
+
 /* fin navbar */
 
 
 /* sobre mi section */
 
 .imageAboutPage {
-    width: 100%;
+    width: 80%;
     border-radius: 5%;
 }
 
@@ -54,18 +131,40 @@ a {
 
 /* termina sobre mi section */
 
-/*  herramientas section */
+/*  herramientas section */ 
 
-.logoHerramientas {
+.container1 {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    padding: 20px; /* Espaciado interno */
+}
+
+.container1 h2 {
+    font-size: 25px;
+}
+
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas de tamaño igual */
-    gap: 20px; /* Espacio entre las celdas */
+    grid-template-columns: 1fr; /* Una columna */
+    gap: 20px; /* Espacio entre las filas y columnas */
+    text-align: center;
 }
 
-.herramientas {
-    font-size: 6rem; /* Tamaño de los íconos */
-    justify-self: center; /* Centrar horizontalmente dentro de su celda */
+.logolenguajes,
+.logoTecnologias,
+.logoFrameworks {
+    display: flex;
+    justify-content: space-around; /* Centra los íconos horizontalmente */
+    align-items: center; /* Centra los íconos verticalmente */
 }
+
+.logolenguajes i,
+.logoTecnologias i,
+.logoFrameworks i {
+    font-size: 100px; /* Tamaño de fuente para los íconos */
+}
+
+
 
 /* termina herramientas section */
 
@@ -82,26 +181,12 @@ a {
     align-items: center;
     justify-content: center;
     width: 400px;
-    border: 1px solid white;
-    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-    backdrop-filter: blur(5px);
-    border-radius: 17px;
     text-align: center;
-    cursor: pointer;
-    transition: all 0.5s;
     user-select: none;
     font-weight: bolder;
     color: black;
 }
 
-.card:hover {
-    border: 1px solid black;
-    transform: scale(1.05);
-}
-
-.card:active {
-    transform: scale(0.95) rotateZ(1.7deg);
-}
 
 /* iconos redes */
 
@@ -115,7 +200,8 @@ a {
     color: #000000;
 }
 
-/* formulario contacto */
+
+/* formulario contacto 
 textarea {
     resize: none;
 }
@@ -124,6 +210,7 @@ textarea {
     text-align: center;
     width: 380px;
 }
+    */
 
 /* btn style */
 
@@ -147,6 +234,29 @@ textarea {
 }
 
 /* fin btn styles */
+
+/* DARK MODE */
+
+.dark-mode {
+    background-color: #222;
+}
+
+.dark-mode h1 {
+    color: #fff;
+}
+
+.dark-mode h2 {
+    color: #fff;
+}
+
+.dark-mode p {
+    color: #fff;
+}
+
+.dark-mode .card {
+    background-color: #1a1a1a;
+    border: none;
+}
 
 /* footer styling */
 .footer-s {
@@ -255,3 +365,11 @@ textarea {
 }
 
 /* termina el texto js */
+
+/* media qrie imagen sobre mi */
+
+@media screen and (max-width: 1000px ){
+    .imageAboutPage {
+        width: 100%;
+    }
+}
