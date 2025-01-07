@@ -129,8 +129,37 @@ a {
     font-size: 20px;
 }
 
+.mt-md-0 {
+    display: flex;
+    justify-content: center;
+}
+
 /* termina sobre mi section */
 
+/* Certificado section */
+
+.cer {
+    display: flex;
+    justify-content: center;
+}
+
+.card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    text-align: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    position: relative;
+    flex-direction: column;
+}
+
+.card1 img {
+    width: 600px;
+    height: 500px;
+}
 /*  herramientas section */ 
 
 .container1 {
@@ -176,17 +205,6 @@ a {
     padding: 10px;
 }
 
-.card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    text-align: center;
-    user-select: none;
-    font-weight: bolder;
-    color: black;
-}
-
 
 /* iconos redes */
 
@@ -200,17 +218,6 @@ a {
     color: #000000;
 }
 
-
-/* formulario contacto 
-textarea {
-    resize: none;
-}
-
-.form-control {
-    text-align: center;
-    width: 380px;
-}
-    */
 
 /* btn style */
 
@@ -379,5 +386,12 @@ textarea {
 @media screen and (max-width: 1000px ){
     .imageAboutPage {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .card1 img {
+        width: 350px;
+        height: 300px;
     }
 }
