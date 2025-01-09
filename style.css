@@ -1,7 +1,7 @@
 :root {
     --logotipo: #1a1a1a;
     --profesion: #f2f2f2;
-    --primario: #556B2F;
+    --primario: #556b2f;
 }
 
 * {
@@ -20,22 +20,10 @@ a {
     outline: none;
 }
 
-
 /* NAVBAR */
-
-.titulo-cv {
-    font-family: Verdana;
-    font-size: 26px;
-}
-
 .nav-item {
     font-family: Verdana;
     font-size: 20px;
-}
-
-/* iconos */
-.nav-icon {
-    font-size: 50px;
 }
 
 /* boton de modo oscuro */
@@ -78,7 +66,7 @@ a {
 }
 
 .toggle-switch .toggle-input:checked+.toggle-label {
-    background-color: #4CAF50;
+    background-color: #4caf50;
 }
 
 .toggle-switch .toggle-input:checked+.toggle-label::before {
@@ -87,11 +75,11 @@ a {
 
 /* Light tema */
 .toggle-switch.light .toggle-label {
-    background-color: #BEBEBE;
+    background-color: #bebebe;
 }
 
 .toggle-switch.light .toggle-input:checked+.toggle-label {
-    background-color: #9B9B9B;
+    background-color: #9b9b9b;
 }
 
 .toggle-switch.light .toggle-input:checked+.toggle-label::before {
@@ -100,7 +88,7 @@ a {
 
 /* Dark tema */
 .toggle-switch.dark .toggle-label {
-    background-color: #4B4B4B;
+    background-color: #4b4b4b;
 }
 
 .toggle-switch.dark .toggle-input:checked+.toggle-label {
@@ -111,22 +99,30 @@ a {
     transform: translateX(16px);
 }
 
-
 /* fin boton */
 
 /* fin navbar */
 
+/* Titulo principal */
+
+.nombre, .saludo {
+    display: flex;
+    justify-content: center;
+    color: darkolivegreen;
+    font-family: verdana;
+}
 
 /* sobre mi section */
 
-.imageAboutPage {
-    width: 80%;
+.foto {
+    width: 350px;
     border-radius: 5%;
 }
 
 .texto {
     font-family: Verdana;
     font-size: 20px;
+    max-width: 900px;
 }
 
 .mt-md-0 {
@@ -136,36 +132,16 @@ a {
 
 /* termina sobre mi section */
 
-/* Certificado section */
 
-.cer {
-    display: flex;
-    justify-content: center;
-}
-
-.card1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    text-align: center;
-    user-select: none;
-    font-weight: bolder;
-    color: black;
-    position: relative;
-    flex-direction: column;
-}
-
-.card1 img {
-    width: 600px;
-    height: 500px;
-}
-/*  herramientas section */ 
+/*  herramientas section */
 
 .container1 {
-    max-width: 800px; /* Ancho máximo del contenedor */
-    margin: 0 auto; /* Centrar el contenedor en la página */
-    padding: 20px; /* Espaciado interno */
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centrar el contenedor en la página */
+    padding: 20px;
+    /* Espaciado interno */
 }
 
 .container1 h2 {
@@ -174,8 +150,10 @@ a {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr; /* Una columna */
-    gap: 20px; /* Espacio entre las filas y columnas */
+    grid-template-columns: 1fr;
+    /* Una columna */
+    gap: 20px;
+    /* Espacio entre las filas y columnas */
     text-align: center;
 }
 
@@ -183,28 +161,121 @@ a {
 .logoTecnologias,
 .logoFrameworks {
     display: flex;
-    justify-content: space-around; /* Centra los íconos horizontalmente */
-    align-items: center; /* Centra los íconos verticalmente */
+    justify-content: space-between;
+    /* Centra los íconos horizontalmente */
+    align-items: center;
+    /* Centra los íconos verticalmente */
 }
 
 .logolenguajes i,
 .logoTecnologias i,
 .logoFrameworks i {
-    font-size: 100px; /* Tamaño de fuente para los íconos */
+    font-size: 150px;
+    /* Tamaño de fuente para los íconos */
 }
-
-
 
 /* termina herramientas section */
 
 /* portafolio section */
 
-.col-lg-6 {
+.portafolio {
     display: flex;
-    justify-content: center;
-    padding: 10px;
+    justify-content: space-around;
+    gap: 20px;
 }
 
+
+.card {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+    width: 500px;
+    height: 400px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 30px;
+    color: #333;
+    font-weight: 700;
+}
+
+.card:hover img {
+    scale: 0;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 20px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.i-cards {
+    font-size: 45px;
+    display: flex;
+    justify-content: space-around    
+}
+
+.text-center{
+    display: flex;
+    justify-content: center;
+}
+
+.text-center a{
+    margin: 3px;
+}
+
+.boton1, .boton2 {
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+}
+
+.boton3, .boton4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+/* fin portafolio section */
 
 /* iconos redes */
 
@@ -218,24 +289,23 @@ a {
     color: #000000;
 }
 
-
 /* btn style */
 
 .btn {
-    --color: #556B2F;
+    --color: #556b2f;
     --color2: rgb(10, 25, 30);
     padding: 0.8em 1.75em;
     background-color: transparent;
     border-radius: 6px;
-    border: .3px solid var(--color);
-    transition: .5s;
+    border: 0.3px solid var(--color);
+    transition: 0.5s;
     position: relative;
     overflow: hidden;
     cursor: pointer;
     z-index: 1;
     font-weight: 300;
     font-size: 17px;
-    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    font-family: "Roboto", "Segoe UI", sans-serif;
     text-transform: uppercase;
     color: var(--color);
 }
@@ -268,8 +338,8 @@ a {
     color: #fff;
 }
 
-.dark-mode .card {
-    background-color: #1a1a1a;
+.dark-mode .card__content {
+    background-color: #222222;
     border: none;
 }
 
@@ -279,7 +349,7 @@ a {
 }
 
 .social-icons2 {
-    font-size: 50px;
+    font-size: 70px;
     cursor: pointer;
     text-align: center;
 }
@@ -351,12 +421,11 @@ a {
 }
 
 .console-container {
-
     font-family: Verdana;
     font-size: 50px;
     text-align: center;
     height: 100px;
-    width: 600px;
+    width: 700px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -383,15 +452,62 @@ a {
 
 /* media qrie imagen sobre mi */
 
-@media screen and (max-width: 1000px ){
-    .imageAboutPage {
+@media screen and (max-width: 1000px) {
+    .foto {
         width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .nombre {
+        font-size: 30px;
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .card1 img {
-        width: 350px;
-        height: 300px;
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .portafolio {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Reducir espacio entre tarjetas */
     }
+
+    .card {
+        max-width: 90%; /* Ocupar la mayor parte del ancho disponible */
+        height: 400px; /* Ajustar altura */
+    }
+
+    .card img {
+        width: 400px;
+        height: 100%;
+        object-fit: cover; /* Asegurar que la imagen se ajuste al contenedor */
+    }
+
+    .card__title {
+        font-size: 20px; /* Más pequeño para pantallas móviles */
+    }
+
+    .card__description {
+        font-size: 14px;
+    }
+
+    .container1{
+        max-width: 100%;
+    }
+
+    .logolenguajes,
+.logoTecnologias,
+.logoFrameworks {
+    display: flex;
+    justify-content: space-around;
+    /* Centra los íconos horizontalmente */
+    align-items: center;
+    /* Centra los íconos verticalmente */
+}
+
+.logolenguajes i,
+.logoTecnologias i,
+.logoFrameworks i {
+    font-size: 100px;
+    /* Tamaño de fuente para los íconos */
+}
 }

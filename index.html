@@ -24,7 +24,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand titulo-cv" target="_blank" href="cv.pdf">Jonathan Fajardo</a>
+                <a class="navbar-brand nav-item" target="_blank" href="./index.html">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,10 +35,13 @@
                             <a class="nav-link" aria-current="page" href="#about">Sobre Mi</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#services">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Proyectos</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                     <span class="navbar-text">
@@ -46,10 +49,6 @@
                             <input class="toggle-input" id="toggle" type="checkbox">
                             <label class="toggle-label" for="toggle"></label>
                         </div>
-                        <a href="https://www.linkedin.com/in/jona-fajardo/" target="_blank"><i
-                                class="fa-brands fa-linkedin nav-icon" style="color: #ffffff;"></i></a>
-                        <a href="https://github.com/jona-f" target="_blank"><i
-                                class="fa-brands fa-square-github nav-icon" style="color: #ffffff;"></i></a>
                     </span>
                 </div>
             </div>
@@ -58,7 +57,7 @@
     </header>
 
     <main id="dark-mode">
-        <!-- TITULO -->
+                                            <!-- TITULO -->
 
         <section id="home">
             <div class="container-fluid">
@@ -67,6 +66,11 @@
                     <div class="avatar">
                         <img src="./img/jf.jpg" alt="Avatar" />
                     </div>
+                </div>
+
+                <div>
+                    <p class="saludo">Hola, soy</p>
+                    <h1 class="nombre">Jonathan Fajardo</h1>
                 </div>
 
                 <!-- TEXTO QUE SE BORRA -->
@@ -79,23 +83,22 @@
             </div>
         </section>
 
-
         <!-- sobre mi section-->
         <section id="about">
             <div class="container mt-4 pt-4 texto">
                 <h1 class="text-center">Sobre Mi</h1>
 
-                <hr>
 
                 <div class="row mt-4">
                     <div class="col-lg-4" data-aos="zoom-in-up">
-                        <img src="./img/perfil.jpg" class="imageAboutPage img-fluid" alt="imagen perfil">
+                        <img src="./img/perfil.jpg" class="foto img-fluid" alt="imagen perfil">
                     </div>
 
-                    <div class="col-lg-8">
-                        <!-- INFO SOBRE MI -->
-                        <p> ¡Hola! Soy Jonathan Fajardo,desarrollador Front End Jr. Soy licenciado de los cursos de Desarrollo Web y JavaScript de Coderhouse,Tengo 28 años y estoy buscando activamente mi primer trabajo en el sector de IT.
-                            Durante mi formación, he desarrollado habilidades en la creación de interfaces web atractivas y funcionales, tengo conocimiento en Html,Css,JavaScript. Frameworks como Node.js y Bootstrap. preprosesadores como Sass.Optimizacion Seo.Base de datos con MySql y control de versiones con Git
+                                                                <!-- INFO SOBRE MI -->
+                    <div class="texto col-lg-8">
+                        <p>Soy licenciado de los cursos de Desarrollo Web y JavaScript en Coderhouse,Tengo 28 años llevo mas de dos años de experiencia en proyectos propios y de forma freelance . </p>
+                        <p>
+                            Durante mi formación, he desarrollado habilidades,buenas practicas y conocimiento en Html,Css y JavaScript.
                         </p>
                         <div class="row mt-3">
                             <div class="mt-md-0">
@@ -114,222 +117,222 @@
             </div>
         </section>
 
-        <section id="certificado">
-            <div class="container mt-3">
-                <h1 class="text-center">Certificados</h1>
+        <hr>
 
-                <hr>
-
-                <div class="row portafolio">
-
-                    <div class="cer">
-                        <div class="card1 certificados" data-aos="zoom-in-right">
-                            <img class="card-img-top" src="./img/certificado1.png" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">Desarrollo Web</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cer">
-                        <div class="card1 certificados" data-aos="zoom-in-left">
-                            <img class="card-img-top" src="./img/certificado2.png" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">JavaScript</h4>
-                            </div>
-                        </div>
-                    </div>
-
-            </div>
-
-        </section>
-
-        <!-- herramientas section-->
-        <section id="services">
-            <div class="container1">
-                <h1 class="text-center">Skills</h1>
-
-                <hr>
-
-                <div class="grid-container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    
-                    <div class="logolenguajes">
-                        <i class="herramientas fa-brands fa-square-js" style="color: #d8ca2c;"></i>
-                        <i class="herramientas fa-brands fa-html5" style="color: #e95607;"></i>
-                        <i class="herramientas fa-brands fa-css3-alt" style="color: #1259d3;"></i>
-                    </div>
-            
-                    
-                    <div class="logoTecnologias">
-                        <i class="herramientas fa-brands fa-github" style="color: #141414;"></i>
-                        <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
-                        <i class="fa-solid fa-database" style="color: #74C0FC;"></i>
-                    </div>
-            
-                    
-                    <div class="logoFrameworks">
-                        <i class="herramientas fa-brands fa-bootstrap" style="color: #97178c;"></i>
-                        <i class="herramientas fa-brands fa-sass" style="color: #d963a8;"></i>
-                        <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- portfolio section-->
+                                            <!-- portfolio section-->
         <section id="portfolio">
             <div class="container mt-3">
                 <h1 class="text-center">Portfolio</h1>
 
-                <hr>
 
                 <div class="row portafolio">
 
-                    <div class="col-lg-6 mt-6">
-                        <div class="card1 portfolioContent" data-aos="zoom-in-right">
-                            
-                            <div class="card-body">
-                                <h4 class="card-title">Api Marvel</h4>
-                                <div> <img src="./img/marvel.jpg" alt="marvel"></div>
-                                <h6>tecnologias usadas:</h6>
-                                <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
-                                <i class="fa-brands fa-html5" style="color: #e95607;"></i>
-                                <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
-                                <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
-                                <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
-                                <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
-                                <div class="text-center">
-                                    <a href="https://jona-f.github.io/apiMarvel/" target="_blank" class="btn">Link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-6">
-                        <div class="card1 portfolioContent" data-aos="zoom-in-left">
-                            
-                            <div class="card-body">
-                                <h4 class="card-title">Api Clima</h4>
-                                <div><img src="./img/clima.jpg" alt="climaApi"></div>
-                                <h6>tecnologias usadas:</h6>
-                                <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
-                                <i class="fa-brands fa-html5" style="color: #e95607;"></i>
-                                <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
-                                <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
-                                <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
-                                <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
-                                <div class="text-center">
-                                    <a href="https://jona-f.github.io/apiClima/" target="_blank"
-                                        class="btn">Link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-6 mt-6">
-                        <div class="card1 portfolioContent" data-aos="zoom-in-right">
-                            
-                            <div class="card-body">
-                                <h4 class="card-title">Maniatic Shine</h4>
-                                <div><img src="./img/maniatic.jpg" alt="maniaticimg"></div>
-                                <h6>tecnologias usadas:</h6>
-                                <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
-                                <i class="fa-brands fa-html5" style="color: #e95607;"></i>
-                                <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
-                                <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
-                                <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
-                                <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
-                                <div class="text-center">
-                                    <a href="https://jona-f.github.io/Maniatic-S/" target="_blank" class="btn">Link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-6">
-                        <div class="card1 portfolioContent" data-aos="zoom-in-left">
-                            
-                            <div class="card-body">
-                                <h4 class="card-title">Tienda Web</h4>
-                                <div><img src="./img/tienda.jpg" alt="tiendaApp"></div>
-                                <h6>tecnologias usadas:</h6>
-                                <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
-                                <i class="fa-brands fa-html5" style="color: #e95607;"></i>
-                                <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
-                                <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
-                                <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
-                                <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
-                                <i class="fa-solid fa-database" style="color: #74C0FC;"></i>
-                                <div class="text-center">
-                                    <a href="https://jona-f.github.io/pizzeria/" target="_blank" class="btn">Link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="card">
+                        <img src="./img/cl.jpg" alt="ClLogistica">
+                    <div class="card__content">
+                        <p class="card__title">Calculador de envios</p>
+                        <p class="card__description">
+                            Desarrollo de una aplicación web para CL Logística, especializada en envíos de paquetería en
+                            Buenos Aires. Me encargué del maquetado y del código completo, implementando una
+                            calculadora de envíos que estima costos en función del peso y volumen del paquete,
+                            optimizando el proceso logístico para el cliente.
+                        </p>
                     
-                    <div class="col-lg-6 mt-6">
-                        <div class="card1 portfolioContent" data-aos="zoom-in-left">
-                            
-                            <div class="card-body">
-                                <h4 class="card-title">Calculador de envios</h4>
-                                <div><img src="./img/cl.jpg" alt="clLogistica"></div>
-                                <h6>tecnologias usadas:</h6>
-                                <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
-                                <i class="fa-brands fa-html5" style="color: #e95607;"></i>
-                                <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
-                                <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
-                                <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
-                                <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
-                                <i class="fa-solid fa-database" style="color: #74C0FC;"></i>
-                                <p>Desarrollo de una aplicación web para CL Logística, especializada en envíos de paquetería en
-                                    Buenos Aires. Me encargué del maquetado y del código completo, implementando una
-                                    calculadora de envíos que estima costos en función del peso y volumen del paquete,
-                                    optimizando el proceso logístico para el cliente.
-                                </p>
-                                <div class="text-center">
-                                    <a href="https://jona-f.github.io/calculadorDeEnvios/" target="_blank" class="btn">Link</a>
-                                </div>
-                            </div>
+                        <div class="i-cards">
+                            <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
+                            <i class="fa-brands fa-html5" style="color: #e95607;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
+                            <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
+                            <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
+                            <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
+                            <i class="fa-solid fa-database" style="color: #74C0FC;"></i>
                         </div>
+                            <div class="text-center">
+                                <a href="https://jona-f.github.io/calculadorDeEnvios/" target="_blank" class="btn">Link</a>
+                                <a href="https://github.com/jona-f/calculadorDeEnvios" target="_blank" class="btn">Codigo</a>
+                            </div>
                     </div>
-                    
-                    <div class="col-lg-6 mt-6">
-                        <div class="card1 portfolioContent" data-aos="zoom-in-left">
-                            
-                            <div class="card-body">
-                                <h4 class="card-title">Portal web</h4>
-                                <div><img src="./img/portal.jpg" alt="portalWeb"></div>
-                                <h6>tecnologias usadas:</h6>
-                                <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
-                                <i class="fa-brands fa-html5" style="color: #e95607;"></i>
-                                <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
-                                <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
-                                <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
-                                <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
-                                <i class="fa-solid fa-database" style="color: #74C0FC;"></i>
-                                <p>Desarrollo y diseño completo de una página web como emprendimiento propio,
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/portal.jpg" alt="PortalWeb">
+                    <div class="card__content">
+                        <p class="card__title">Portal webs</p>
+                        <p class="card__description">
+                            Desarrollo y diseño completo de una página web como emprendimiento propio,
                                     encargándome tanto del maquetado como de la implementación del código utilizando
                                     tecnologías modernas para lograr un sitio funcional y atractivo.
-                                    </p>
-                                <div class="text-center">
-                                    <a href="https://jona-f.github.io/portal.webs/" target="_blank" class="btn">Link</a>
-                                </div>
-                            </div>
+                        </p>
+                    
+                        <div class="i-cards">
+                            <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
+                            <i class="fa-brands fa-html5" style="color: #e95607;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
+                            <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
+                            <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
+                            <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
+                            <i class="fa-solid fa-database" style="color: #74C0FC;"></i>
                         </div>
+                            <div class="boton1">
+                                <a href="https://jona-f.github.io/calculadorDeEnvios/" target="_blank" class="btn">Link</a>
+                            </div>
+                            <div class="boton2">
+                                <a href="https://github.com/jona-f/portal.webs" target="_blank" class="btn">Codigo</a>
+                            </div>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/maniatic.jpg" alt="Maniatic">
+                    <div class="card__content">
+                        <p class="card__title">Maniatic-Shine</p>
+                        <p class="card__description">
+                                    Desarrollo y diseño de la pagina web,
+                                    encargándome tanto del maquetado como de la implementación del código para lograr un sitio funcional y atractivo.
+                        </p>
+                    
+                        <div class="i-cards">
+                            <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
+                            <i class="fa-brands fa-html5" style="color: #e95607;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
+                            <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
+                            <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
+                            <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
+                            <i class="fa-solid fa-database" style="color: #74C0FC;"></i>
+                        </div>
+                            <div class="boton3">
+                                <a href="https://jona-f.github.io/Maniatic-S/" target="_blank" class="btn">Link</a>
+                            </div>
+                            <div class="boton4">
+                                <a href="https://github.com/jona-f/Maniatic-S" target="_blank" class="btn">Codigo</a>
+                            </div>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/tienda.jpg" alt="pizzeria">
+                    <div class="card__content">
+                        <p class="card__title">Proyecto Tienda</p>
+                        <p class="card__description">
+                                    Desarrollo y diseño completo de una tienda
+                                    demostrando las categorias de distintos productos y un carrito de compras.
+                        </p>
+                    
+                        <div class="i-cards">
+                            <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
+                            <i class="fa-brands fa-html5" style="color: #e95607;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
+                            <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
+                            <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
+                            <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
+                            <i class="fa-solid fa-database" style="color: #74C0FC;"></i>
+                        </div>
+                            <div class="boton3">
+                                <a href="https://jona-f.github.io/pizzeria/" target="_blank" class="btn">Link</a>
+                            </div>
+                            <div class="boton4">
+                                <a href="https://github.com/jona-f/pizzeria" target="_blank" class="btn">Codigo</a>
+                            </div>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/marvel.jpg" alt="MarvelApi">
+                    <div class="card__content">
+                        <p class="card__title">Marvel Api</p>
+                        <p class="card__description">
+                            Landing page donde conectamos la Api que nos otorga Marvel.
+                        </p>
+                    
+                        <div class="i-cards">
+                            <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
+                            <i class="fa-brands fa-html5" style="color: #e95607;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
+                            <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
+                            <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
+                            <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
+                            <i class="fa-solid fa-database" style="color: #74C0FC;"></i>
+                        </div>
+                            <div class="boton3">
+                                <a href="https://jona-f.github.io/apiMarvel/" target="_blank" class="btn">Link</a>
+                            </div>
+                            <div class="boton4">
+                                <a href="https://github.com/jona-f/apiMarvel" target="_blank" class="btn">Codigo</a>
+                            </div>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/clima.jpg" alt="Clima">
+                    <div class="card__content">
+                        <p class="card__title">Api del Clima</p>
+                        <p class="card__description">
+                            Desarrollo y diseño completo de landing page conectando la Api de Wheater.
+                        </p>
+                    
+                        <div class="i-cards">
+                            <i class="fa-brands fa-square-js" style="color: #d8ca2c;"></i>
+                            <i class="fa-brands fa-html5" style="color: #e95607;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #1259d3;"></i>
+                            <i class="fa-brands fa-bootstrap" style="color: #97178c;"></i>
+                            <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
+                            <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
+                            <i class="fa-solid fa-database" style="color: #74C0FC;"></i>
+                        </div>
+                            <div class="boton3">
+                                <a href="https://jona-f.github.io/apiClima/" target="_blank" class="btn">Link</a>
+                            </div>
+                            <div class="boton4">
+                                <a href="https://github.com/jona-f/apiClima" target="_blank" class="btn">Codigo</a>
+                            </div>
+                    </div>
                     </div>
 
                 </div>
             </div>
         </section>
 
+        <hr>
+
+
+                                                    <!-- herramientas section-->
+
+    <section id="services">
+    <div class="container1">
+        <h1 class="text-center">Skills</h1>
+                                
+                                
+                <div class="grid-container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                                    
+                    <div class="logolenguajes">
+                                                        <i class="herramientas fa-brands fa-square-js" style="color: #d8ca2c;"></i>
+                                                        <i class="herramientas fa-brands fa-html5" style="color: #e95607;"></i>
+                                                        <i class="herramientas fa-brands fa-css3-alt" style="color: #1259d3;"></i>
+                    </div>
+                                            
+                                                    
+                    <div class="logoTecnologias">
+                                                        <i class="herramientas fa-brands fa-github" style="color: #141414;"></i>
+                                                        <i class="herramientas fa-brands fa-git" style="color: #c37113;"></i>
+                                                        <i class="fa-solid fa-database" style="color: #74C0FC;"></i>
+                    </div>
+                                            
+                                                    
+                    <div class="logoFrameworks">
+                                                        <i class="herramientas fa-brands fa-bootstrap" style="color: #97178c;"></i>
+                                                        <i class="herramientas fa-brands fa-sass" style="color: #d963a8;"></i>
+                                                        <i class="herramientas fa-brands fa-node" style="color: #1fb222;"></i>
+                    </div>
+                </div>
+    </div>
+                                
+            </section>
+
     </main>
 
-    <footer>
+    <footer id="contacto">
         <!-- FOOTER STYLE -->
 
-        <div class="container-fluid">
 
             <div class="social-icons2 mt-4 footer-s">
 
@@ -340,11 +343,14 @@
                 <a href="https://github.com/jona-f" target="_blank"><i class="fab fa-github hover-icon"></i></a>
                 <a href="https://www.instagram.com/fajardo.jona/" target="_blank"><i
                         class="fab fa-instagram hover-icon"></i></a>
+                
+
+                        <p class="copy">jonafajardo32@gmail.com</p>
 
                 <p class="copy">Copy-Right 2023: Jonathan Fajardo</p>
 
             </div>
-        </div>
+
 
     </footer>
 

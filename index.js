@@ -1,7 +1,7 @@
 /* texto que se borra */
 
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Hola Mundo.', 'Soy Jonathan Fajardo', 'Front-end Developer.'], 'text', ['darkolivegreen', 'olivedrab', 'darkolivegreen']);
+consoleText(['Front-end Developer Jr.'], 'text', ['darkolivegreen']);
 
 function consoleText(words, id, colors) {
     if (colors === undefined) colors = ['#fff'];
@@ -38,7 +38,7 @@ function consoleText(words, id, colors) {
             target.innerHTML = words[0].substring(0, letterCount)
             letterCount += x;
         }
-    }, 120)
+    }, 80)
     window.setInterval(function () {
         if (visible === true) {
             con.className = 'console-underscore hidden'
